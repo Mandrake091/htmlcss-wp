@@ -13,6 +13,7 @@
 
 /* General */
 .container{
+   
     min-width: 600px;
     width: 80%;
     margin: 0 auto;
@@ -28,21 +29,33 @@ span{
     font-weight: 300;
     padding-right: 5px;
 }
-span>a{
+
+ul li a{
+    font-weight: 300;
+    margin-bottom: 25px;
+    color:grey;
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 136, 0);
+}
+li{
     color:grey;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 30px 10px;
     font-weight: 300;
 }
 h4{
-    padding-top: 5px;
+    padding-top: 10px;
     color:grey;
     font-weight: 300;
 }
 h1{
-    padding-top: 10px;
     font-weight: 900;
     font-size: 35px;
 }
@@ -52,36 +65,35 @@ h1{
 header{
     position: relative;
     margin: 0 auto;
-    height: 480px;
+    height: 500px;
 }
-.header-container{
-    margin: 0 auto;
-    
-}
+
 .header-banner{
     position: absolute;
     width: 100%;
     border-radius: 10px;
     background-position:0;
-    margin:0 auto;
+    margin:30px auto;
     background-size: cover;
-    height: 300px;
+    height: 350px;
     background-image:
     url(../img/banner.jpg);
     filter: brightness(80%) drop-shadow(0px 0px 2px gray);
 }
-.header-container>img{
+header>img{
+    margin-bottom: 30px;
     padding-right: 30px;
     border-right: 1px solid #d7d7d7;
     height: 60px;
 }
 .text-banner{
+    font-size: 26px;
     line-height: 1.1;
-    width: 50%;
-    font-weight: 400;
+    width: 45%;
+    font-weight: 300;
     position: relative;
-    top: 170px;
-    left: 30px;
+    top: 220px;
+    left: 35px;
     color:white;
 }
 .text-banner>p{
@@ -91,33 +103,31 @@ header{
 
 /* Main */
 main{
+    position:relative;
+    height: 600px;
     min-width: 80%;
     line-height: 1.3em;
     width: 100%;
-    margin:0 auto;
+    margin:40px auto;
 }
 .text-area{
     padding-top: 10px;
     line-height: 1.2;
     color: grey;
     text-align: left;
-    padding-right: 10px;
     font-size: 13px;
     font-weight: 300;
 }
 
 /* Right Column */
 section>img{
-    min-width: 150px;
     margin-bottom: 10px;
     width: 100%;
-    height: 100%;
-    background-size: contain;
+    height: 150px;
     object-fit: cover;
     filter:brightness(80%) drop-shadow(0px 0px 2px gray);
 }
 .section{
-    
     margin:15px 0 0 0;
     height: 150px;
     width: calc(20% - 15px);
@@ -125,23 +135,17 @@ section>img{
     background-color: aqua;
     object-fit: contain;
 }
-.section-text{
-    overflow: hidden;
-    margin: 15px 0 0 0;
-    width: calc(20% - 15px);
-}
 /* / Right Column */
 
 /* Central Column */
 .article{
     border-radius: 10px;
     margin: 15px 0 0 0;
-    height: 150px;
+    height: 15px;
     width:60%;
     background-color: rgb(12, 111, 128);
 }
 article>img{
-    min-width: 150px;
     margin-bottom: 10px;
     filter:brightness(80%) drop-shadow(0px 0px 2px gray);
     height: 150px;
@@ -156,40 +160,39 @@ article>img{
 
 /* Left Column */
 aside>img{
-    min-width: 150px;
     margin-bottom: 10px;
     filter:brightness(80%) drop-shadow(0px 0px 2px gray);
     width: 100%;
-    height: 100%;
-    background-size: contain;
+    height: 150px;
     object-fit: cover;
 }
 .aside{
-    min-width: 150px;
     object-position: 0;
-    object-fit: contain;
     border-radius: 10px;
     margin: 15px 15px 0 0;
     width: calc(20% - 15px);
     height: 150px;
     background-color: tan;
 }
-
 /* / Left Column */
 
 /* Footer */
+footer{
+    margin-top:30px;
+    height: 200px;
+}
 footer>p{
     font-size: 15px;
-    margin: 50px auto;
+    margin: 0 auto;
     height: 50px;
     font-weight: 300;
     line-height:3;
     text-align: center;
-    
 }
 footer>p>span{
+    
     color:red;
 }
 /* / Footer */
 
-/* / Main */
+
