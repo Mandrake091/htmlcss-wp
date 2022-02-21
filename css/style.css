@@ -55,7 +55,9 @@ h2{
     font-size: 35px;
 }
 .header-banner{
-    position: relative;width: 100%;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
     background-position:0;
     margin:30px auto;
     background-size: cover;
@@ -64,20 +66,20 @@ h2{
     url(../img/banner.jpg);
 }
 .hoverlay::before{
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom:0;
     right: 0;
-    background-color:rgba(0, 0, 0, 0.2);
-    filter: brightness(70%) drop-shadow(0px 0px 2px gray);
+    background-color:rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 /* / Text Style */
 
 /* Header */
 header{
+    position: relative;
     margin: 0 auto;
     height: 500px;
 }
@@ -87,27 +89,28 @@ header>img{
     border-right: 1px solid #d7d7d7;
     height: 60px;
 }
-.header-banner .text-banner{
+.text-banner{
     font-size: 26px;
     line-height: 1.1;
-    width: 45%;
+    width: 55%;
     font-weight: 300;
     position: relative;
-    top: 220px;
+    top: 180px;
     left: 35px;
     color:white;
 }
 .text-banner>p{
-    font-size: 12px;
+    font-size: 13px;
 }
 /* / Header */
 
 /* Main */
 main{
+    position: absolute;
     height: 600px;
     min-width: 80%;
     line-height: 1.3em;
-    width: 100%;
+    width: 80%;
     margin:40px auto;
 }
 .text-area{
@@ -128,6 +131,7 @@ section>img{
    
 }
 .section{
+    position: relative;
     margin:15px 0 0 0;
     height: 150px;
     width: calc(20% - 15px);
@@ -137,8 +141,10 @@ section>img{
 
 /* Central Column */
 .article{
+    position: relative;
     margin: 15px 0 0 0;
     width:60%;
+    height: 150px;
 }
 article>img{
     margin-bottom: 10px;
@@ -160,6 +166,7 @@ aside>img{
     object-fit: cover;
 }
 .aside{
+    position: relative;
     object-position: 0;
     margin: 15px 15px 0 0;
     width: calc(20% - 15px);
@@ -169,19 +176,22 @@ aside>img{
 
 /* Footer */
 footer{
-    margin-top:30px;
-    height: 200px;
+    position:absolute;
+    width:100%;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
 }
 footer>p{
+    text-align: center;
+    height: 50px;
     font-size: 15px;
     margin: 0 auto;
-    height: 50px;
     font-weight: 300;
     line-height:3;
-    text-align: center;
 }
 footer>p>span{
-    
     color:red;
 }
 /* / Footer */
