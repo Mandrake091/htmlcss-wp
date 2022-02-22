@@ -13,7 +13,6 @@
 
 /* General */
 .container{
-    min-width: 600px;
     width: 80%;
     margin: 0 auto;
 }
@@ -79,11 +78,8 @@ h2{
 
 /* Header */
 header{
-    position: relative;
     margin: 0 auto;
-    height: 500px;
 }
-
 header>img{
     padding-right: 30px;
     border-right: 1px solid #d7d7d7;
@@ -106,11 +102,8 @@ header>img{
 
 /* Main */
 main{
-    position: absolute;
-    height: 600px;
-    min-width: 80%;
     line-height: 1.3em;
-    width: 80%;
+    width: 100%;
     margin:40px auto;
 }
 .text-area{
@@ -123,31 +116,36 @@ main{
 }
 
 /* Right Column */
-section>img{
-    margin-bottom: 10px;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-   
-}
-.section{
+section .small-image{
     position: relative;
-    margin:15px 0 0 0;
+    width: 100%;
+}
+section img{
     height: 150px;
-    width: calc(20% - 15px);
+    width: 100%;
+    object-fit: cover;
+}
+small img{
+    
+    object-fit: cover;
+}
+section{
+    margin:0 0 0 0;
+    width: 20%;
     object-fit: contain;
 }
 /* / Right Column */
 
 /* Central Column */
-.article{
+article .big-image{
     position: relative;
-    margin: 15px 0 0 0;
-    width:60%;
-    height: 150px;
+    width: 100%;
 }
-article>img{
-    margin-bottom: 10px;
+.article{
+    margin: 0 15px 0 15px;
+    width:calc(60% - 30px);
+}
+.big-image img{
     height: 150px;
     object-fit: cover;
     width: 100%;
@@ -159,29 +157,25 @@ article>img{
 /* / Central Column */
 
 /* Left Column */
-aside>img{
-    margin-bottom: 10px;
+aside .small-image{
+    position: relative;
     width: 100%;
+}
+aside img{
     height: 150px;
+    width: 100%;
     object-fit: cover;
 }
-.aside{
-    position: relative;
-    object-position: 0;
-    margin: 15px 15px 0 0;
-    width: calc(20% - 15px);
-    height: 150px;
+aside{
+    width: 20%;
 }
 /* / Left Column */
 
 /* Footer */
 footer{
-    position:absolute;
     width:100%;
     bottom: -100px;
-    width: 100%;
     text-align: center;
-    height: 50px;
 }
 footer>p{
     text-align: center;
